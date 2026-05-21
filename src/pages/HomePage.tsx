@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowLeft, ShieldCheck, Zap, Cog, Award } from "lucide-react";
 import heroImg from "@/assets/td/installation.jpg";
-import aboutImg from "@/assets/td/about-hero.jpg";
+import aboutImg from "@/assets/td/fire-shutter.png";
 import { products, clients, stats } from "@/lib/site-data";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import rolling from "@/assets/td/rolling.jpg";
