@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowLeft, ShieldCheck, Zap, Cog, Award } from "lucide-react";
 import heroImg from "@/assets/td/installation.jpg";
@@ -14,24 +14,9 @@ import garage from "@/assets/td/garage.jpg";
 
 const imgMap: Record<string, string> = { rolling, sliding, barrier, shutter, speed, garage };
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "تكنو دور | الأبواب الأوتوماتيكية الإيطالية — الرئيسية" },
-      { name: "description", content: "تكنو دور TECHNODOOR — منذ 1970، رائد الأبواب الأوتوماتيكية الإيطالية في سوريا ومصر والسودان وليبيا. رولينج شاتر، سبيد دور، حواجز، وأبواب صناعية ضخمة." },
-      { property: "og:title", content: "تكنو دور | TECHNODOOR" },
-      { property: "og:description", content: "أبواب أوتوماتيكية إيطالية بخبرة 50+ سنة." },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
-  component: Home,
-});
-
-function Home() {
+export function HomePage() {
   return (
     <>
-      {/* HERO */}
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImg} alt="آلية الأبواب الأوتوماتيكية الإيطالية من تكنو دور" className="w-full h-full object-cover opacity-30" />
@@ -46,8 +31,7 @@ function Home() {
               <span className="text-[var(--cyan)] text-xs font-black tracking-[0.25em] uppercase">Italian Automatic Doors · Since 1970</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.05] text-white max-w-4xl">
-              القوة، الأمان<br/>
-              والتكنولوجيا <span className="text-gradient-cyan">في حركة واحدة</span>
+              القوة، الأمان<br />والتكنولوجيا <span className="text-gradient-cyan">في حركة واحدة</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
               تكنو دور — خمسة عقود من الريادة في تصميم وتركيب الأبواب الأوتوماتيكية الإيطالية لكبرى المطارات والبنوك والعلامات التجارية العالمية في الشرق الأوسط وشمال إفريقيا.
@@ -64,7 +48,6 @@ function Home() {
         </div>
       </section>
 
-      {/* STATS */}
       <section className="bg-surface-low border-y border-white/5">
         <div className="mx-auto max-w-7xl px-5 md:px-8 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s, i) => (
@@ -76,7 +59,6 @@ function Home() {
         </div>
       </section>
 
-      {/* FEATURES */}
       <section className="mx-auto max-w-7xl px-5 md:px-8 py-24">
         <SectionHeading eyebrow="لماذا تكنو دور" title="هندسة إيطالية," accent="جودة بلا حدود" desc="نمتلك الإمكانيات لتقديم أكبر وأضخم الأبواب الأوتوماتيكية بأي عرض أو ارتفاع، مع ضمان أعلى معايير الجودة والمواصفات القياسية." />
         <div className="grid md:grid-cols-4 gap-5">
@@ -95,7 +77,6 @@ function Home() {
         </div>
       </section>
 
-      {/* PRODUCTS PREVIEW */}
       <section className="bg-surface-low py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeading eyebrow="منتجاتنا" title="حلول أبواب" accent="لكل قطاع" desc="من المطارات والمصانع إلى المتاجر والفلل — لدينا الحلّ المناسب." />
@@ -121,21 +102,17 @@ function Home() {
         </div>
       </section>
 
-      {/* CLIENTS STRIP */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeading eyebrow="عملاء يثقون بنا" title="نخبة من" accent="أكبر المؤسسات" />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2">
             {clients.map((c) => (
-              <div key={c} className="bg-surface-low hover:bg-surface-high transition-colors p-5 text-center text-white/70 hover:text-[var(--cyan)] text-sm font-bold">
-                {c}
-              </div>
+              <div key={c} className="bg-surface-low hover:bg-surface-high transition-colors p-5 text-center text-white/70 hover:text-[var(--cyan)] text-sm font-bold">{c}</div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ABOUT TEASER + CTA */}
       <section className="bg-surface-low py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8 grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
