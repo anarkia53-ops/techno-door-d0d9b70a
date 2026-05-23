@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { clients, suppliers } from "@/lib/site-data";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import partnersImg from "@/assets/td/partners.jpg";
+import suppliersLogos from "@/assets/td/suppliers-logos.png";
 
 export const Route = createFileRoute("/partners")({
   head: () => ({
@@ -51,19 +52,8 @@ function PartnersPage() {
       <section className="bg-surface-low py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeading eyebrow="Italian Suppliers" title="شركاء" accent="التصنيع" desc="نختار خاماتنا ومحركاتنا من نخبة المصنعين العالميين لضمان أعلى مستويات الأداء." />
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
-            {suppliers.map((s, i) => (
-              <motion.div
-                key={s}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.06 }}
-                className="bg-surface-high p-7 text-center font-black tracking-[0.12em] text-white/70 hover:text-[var(--cyan)] transition"
-              >
-                {s}
-              </motion.div>
-            ))}
+          <div className="bg-white p-6 md:p-10">
+            <img src={suppliersLogos} alt="شركاء التصنيع العالميين" loading="lazy" className="w-full h-auto" />
           </div>
         </div>
       </section>
