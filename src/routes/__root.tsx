@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: "TECHNODOOR — تكنو دور",
           url: "https://techno-door.com",
-          email: "admin@techno-door.com",
+          email: "kaadan@techno-door.com",
           foundingDate: "1970",
           areaServed: ["EG", "SY", "SD", "LY"],
           sameAs: ["https://www.facebook.com/techhnoodoor99"],
