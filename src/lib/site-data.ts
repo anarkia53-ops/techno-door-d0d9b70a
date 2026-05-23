@@ -42,7 +42,7 @@ export const products = [
   {
     slug: "garage-foam",
     title: "أبواب الفوم والصاج",
-    en: "Garage & Sectional Doors",
+    en: "Sectional Doors",
     desc: "أبواب جراجات قطاعية (Sectional) وأبواب الفوم والصاج، بعزل حراري وصوتي عالٍ.",
     img: "garage",
     specs: ["Sectional", "Roll-up", "عزل مزدوج", "ألوان حسب الطلب"],
