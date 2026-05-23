@@ -61,7 +61,7 @@ export function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 md:px-8 py-24">
-        <SectionHeading eyebrow="لماذا تكنو دور" title="هندسة عالمية," accent="جودة بلا حدود" desc="نمتلك الإمكانيات لتقديم أكبر وأضخم الأبواب الأوتوماتيكية بأي عرض أو ارتفاع، مع ضمان أعلى معايير الجودة والمواصفات القياسية." />
+        <SectionHeading eyebrow="لماذا تكنو دور" title="هندسة عالمية," accent="جودة بلا حدود" desc={"محركات من افضل الشركات الاوربيه تعمل بسرعات \nتشغيل عالي وعمر افتراضي اطول \n"} />
         <div className="grid md:grid-cols-4 gap-5">
           {[
             { Icon: ShieldCheck, t: "أمان مطلق", d: "أنظمة قفل ومستشعرات أمان متقدمة لحماية المنشأة والأشخاص." },
