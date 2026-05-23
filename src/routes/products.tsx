@@ -49,7 +49,7 @@ function ProductsPage() {
             className={`grid md:grid-cols-5 gap-0 bg-surface-low hover:bg-surface-high transition-colors group overflow-hidden ${i % 2 ? "md:[direction:ltr]" : ""}`}
           >
             <div className="md:col-span-2 aspect-[4/3] md:aspect-auto overflow-hidden bg-black">
-              <img src={imgMap[p.img]} alt={p.title} loading="lazy" className="w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 object-contain" />
+              <img src={imgMap[p.img]} alt={p.title} loading="lazy" className="w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 object-fill" />
             </div>
             <div className="md:col-span-3 p-8 md:p-12 [direction:rtl]">
               <div className="text-xs text-[var(--cyan)] font-black tracking-[0.25em] uppercase mb-3">{p.en}</div>
