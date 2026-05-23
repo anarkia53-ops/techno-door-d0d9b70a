@@ -12,7 +12,7 @@ export function SectionHeading({ eyebrow, title, accent, desc }: { eyebrow?: str
       {eyebrow && (
         <div className="flex items-center gap-3 mb-4">
           <span className="h-2 w-2 bg-[var(--cyan)] glow-cyan-sm" />
-          <span className="text-[var(--cyan)] text-xs font-black tracking-[0.25em] uppercase">{eyebrow}</span>
+          <span className="font-black tracking-[0.25em] uppercase text-xl">{eyebrow}</span>
         </div>
       )}
       <h2 className="text-4xl md:text-6xl font-black leading-tight text-white">
