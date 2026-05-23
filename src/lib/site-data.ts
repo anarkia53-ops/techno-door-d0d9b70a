@@ -72,7 +72,7 @@ export const suppliers = [
 
 export const stats = [
   { value: "50+", label: "عاماً من الخبرة" },
-  { value: "4", label: "فروع إقليمية" },
+  { value: "فروعنا ", label: "" },
   { value: "500+", label: "مشروعاً منفّذاً" },
   { value: "100%", label: "خامات عالمية" },
 ];
