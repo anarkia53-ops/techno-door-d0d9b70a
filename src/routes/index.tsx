@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ShieldCheck, Zap, Cog, Award } from "lucide-react";
 import heroImg from "@/assets/td/installation.jpg";
 import aboutImg from "@/assets/td/about-hero.jpg";
-import { products, clients, stats } from "@/lib/site-data";
+import { products, stats } from "@/lib/site-data";
+import clientsLogos from "@/assets/td/clients-logos.png";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import rolling from "@/assets/td/rolling.jpg";
 import sliding from "@/assets/td/sliding.jpg";
@@ -125,12 +126,8 @@ function Home() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeading eyebrow="عملاء يثقون بنا" title="نخبة من" accent="أكبر المؤسسات" />
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2">
-            {clients.map((c) => (
-              <div key={c} className="bg-surface-low hover:bg-surface-high transition-colors p-5 text-center text-white/70 hover:text-[var(--cyan)] text-sm font-bold">
-                {c}
-              </div>
-            ))}
+          <div className="bg-white p-6 md:p-10">
+            <img src={clientsLogos} alt="شعارات أبرز عملاء تكنو دور" loading="lazy" className="w-full h-auto" />
           </div>
         </div>
       </section>
