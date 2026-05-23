@@ -19,7 +19,7 @@ export function HomePage() {
     <>
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="آلية الأبواب الأوتوماتيكية العالمية من تكنو دور" className="w-full h-full object-cover opacity-30" />
+          <img src={heroImg} alt="آلية الأبواب الأوتوماتيكية العالمية من تكنو دور" className="w-full h-full object-fill opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-l from-surface via-surface/70 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/40" />
           <div className="absolute inset-0 grid-bg opacity-50" />
