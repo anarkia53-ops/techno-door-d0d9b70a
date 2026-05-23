@@ -22,7 +22,6 @@ function ContactPage() {
     { Icon: Phone, t: "الهاتف", v: "011 5711 4794", href: "tel:+201157114794", dir: "ltr" },
     { Icon: Phone, t: "الهاتف", v: "012 8625 4951", href: "tel:+201286254951", dir: "ltr" },
     { Icon: Mail, t: "البريد", v: "kaadan@techno-door.com", href: "mailto:kaadan@techno-door.com" },
-    { Icon: Globe, t: "الموقع", v: "techno-door.com", href: "https://techno-door.com" },
     { Icon: Facebook, t: "فيسبوك", v: "techhnoodoor99", href: "https://www.facebook.com/techhnoodoor99" },
     { Icon: MapPin, t: "العنوان", v: "القاهرة" },
   ];
