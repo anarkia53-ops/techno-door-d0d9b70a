@@ -65,7 +65,7 @@ function AboutPage() {
 
       {/* Branches */}
       <section className="mx-auto max-w-7xl px-5 md:px-8 py-24">
-        <SectionHeading eyebrow="حضور إقليمي" title="فروعنا في" accent="أربع دول" />
+        <SectionHeading eyebrow="حضور إقليمي" title="فروعنا " />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {branches.map((b, i) => (
             <motion.div key={b.city} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="bg-surface-low hover:bg-surface-high transition p-7">
