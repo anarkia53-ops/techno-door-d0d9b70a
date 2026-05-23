@@ -8,7 +8,7 @@ export const Route = createFileRoute("/partners")({
   head: () => ({
     meta: [
       { title: "شركاء النجاح والعملاء — تكنو دور" },
-      { name: "description", content: "نفتخر بثقة كبرى المؤسسات والعلامات العالمية: Mercedes, Pepsi, ZARA, H&M, FAB, Etisalat، وشركاء التصنيع الإيطاليين Cardin و Elsamec و Tornado." },
+      { name: "description", content: "نفتخر بثقة كبرى المؤسسات والعلامات العالمية: Mercedes, Pepsi, ZARA, H&M, FAB, Etisalat، وشركاء التصنيع العالميين Cardin و Elsamec و Tornado." },
       { property: "og:title", content: "الشركاء — تكنو دور" },
       { property: "og:description", content: "ثقة كبرى العلامات التجارية والمؤسسات." },
       { property: "og:url", content: "/partners" },
@@ -50,7 +50,7 @@ function PartnersPage() {
 
       <section className="bg-surface-low py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <SectionHeading eyebrow="Italian Suppliers" title="شركاء" accent="التصنيع" desc="نختار خاماتنا ومحركاتنا من نخبة المصنعين الإيطاليين لضمان أعلى مستويات الأداء." />
+          <SectionHeading eyebrow="Italian Suppliers" title="شركاء" accent="التصنيع" desc="نختار خاماتنا ومحركاتنا من نخبة المصنعين العالميين لضمان أعلى مستويات الأداء." />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
             {suppliers.map((s, i) => (
               <motion.div

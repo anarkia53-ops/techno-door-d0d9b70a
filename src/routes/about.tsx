@@ -12,7 +12,7 @@ export const Route = createFileRoute("/about")({
       { title: "من نحن — تكنو دور | TECHNODOOR" },
       { name: "description", content: "تأسست تكنو دور عام 1970 في دمشق، خمسة عقود من الريادة في الأبواب الأوتوماتيكية، مع فروع في مصر والسودان وليبيا." },
       { property: "og:title", content: "من نحن — تكنو دور" },
-      { property: "og:description", content: "إرث صناعي إيطالي منذ 1970." },
+      { property: "og:description", content: "إرث صناعي عالمي منذ 1970." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -55,7 +55,7 @@ function AboutPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-surface-high p-10">
             <Eye className="text-[var(--cyan)] mb-4" size={32} />
             <h3 className="text-3xl font-black text-white mb-4">رؤيتنا</h3>
-            <p className="text-white/70 leading-loose">أن نكون الخيار الأول والشركة الرائدة في حلول الأبواب الأوتوماتيكية والذكية في الشرق الأوسط وشمال إفريقيا، ونضع معايير عالمية جديدة تجمع بين الفخامة الإيطالية، الابتكار الهندسي، والأمان المطلق.</p>
+            <p className="text-white/70 leading-loose">أن نكون الخيار الأول والشركة الرائدة في حلول الأبواب الأوتوماتيكية والذكية في الشرق الأوسط وشمال إفريقيا، ونضع معايير عالمية جديدة تجمع بين الفخامة العالمية، الابتكار الهندسي، والأمان المطلق.</p>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-surface-high p-10">
             <Target className="text-[var(--cyan)] mb-4" size={32} />

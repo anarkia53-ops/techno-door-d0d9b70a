@@ -11,7 +11,7 @@ export function Footer() {
             <span className="font-black tracking-[0.18em] text-white">TECHNO<span className="text-[var(--cyan)]">DOOR</span></span>
           </div>
           <p className="text-white/60 max-w-md leading-relaxed text-sm">
-            تأسست عام 1970 في دمشق. خمسة عقود من الريادة في تصنيع وتركيب الأبواب الأوتوماتيكية الإيطالية لكبرى المؤسسات والمطارات والمراكز التجارية.
+            تأسست عام 1970 في دمشق. خمسة عقود من الريادة في تصنيع وتركيب الأبواب الأوتوماتيكية العالمية لكبرى المؤسسات والمطارات والمراكز التجارية.
           </p>
         </div>
         <div>
