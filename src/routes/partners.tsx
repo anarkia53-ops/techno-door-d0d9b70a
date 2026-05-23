@@ -24,7 +24,7 @@ function PartnersPage() {
     <>
       <section className="relative py-24 border-b border-white/5 overflow-hidden">
         <div className="absolute inset-0 opacity-15">
-          <img src={partnersImg} alt="شركاء تكنو دور" className="w-full h-full object-fill" />
+          <img src={partnersImg} alt="شركاء تكنو دور" className="w-full h-full object-cover" />
         </div>
         <div className="relative mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeading eyebrow="ثقة عالمية" title="شركاء" accent="النجاح" desc="على مدار 50+ سنة من التميّز، نفتخر بأن نكون الخيار الأول لنخبة من كبرى الشركات والعلامات التجارية والمؤسسات الحكومية." />

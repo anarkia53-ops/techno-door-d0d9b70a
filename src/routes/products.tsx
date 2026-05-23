@@ -49,7 +49,7 @@ function ProductsPage() {
             className={`grid md:grid-cols-5 gap-0 bg-surface-low hover:bg-surface-high transition-colors group overflow-hidden ${i % 2 ? "md:[direction:ltr]" : ""}`}
           >
             <div className="md:col-span-2 aspect-[4/3] md:aspect-auto overflow-hidden bg-black">
-              <img src={imgMap[p.img]} alt={p.title} loading="lazy" className="w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 object-fill" />
+              <img src={imgMap[p.img]} alt={p.title} loading="lazy" className="w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 object-cover" />
             </div>
             <div className="md:col-span-3 p-8 md:p-12 [direction:rtl]">
               <div className="text-xs text-[var(--cyan)] font-black tracking-[0.25em] uppercase mb-3">{p.en}</div>
@@ -76,14 +76,14 @@ function ProductsPage() {
           <SectionHeading eyebrow="مواصفات تقنية" title="معايير" accent="عالمية" desc="من Polycarbonate الشفاف إلى الأبواب المضادة للحريق بسماكات 77mm و85mm." />
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="bg-surface-high overflow-hidden">
-              <img src={fire} alt="باب مضاد للحريق بسماكة 85mm من تكنو دور" loading="lazy" className="w-full aspect-[16/10] object-fill" />
+              <img src={fire} alt="باب مضاد للحريق بسماكة 85mm من تكنو دور" loading="lazy" className="w-full aspect-[16/10] object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-black text-white">باب مضاد للحريق · 85mm</h3>
                 <p className="text-sm text-white/60 mt-2">بولي كربونيت + إصدار 77mm متوفر للمنشآت الحساسة.</p>
               </div>
             </div>
             <div className="bg-surface-high overflow-hidden">
-              <img src={foam} alt="ألمنيوم مخرّم وأبواب فوم وصاج" loading="lazy" className="w-full aspect-[16/10] object-fill" />
+              <img src={foam} alt="ألمنيوم مخرّم وأبواب فوم وصاج" loading="lazy" className="w-full aspect-[16/10] object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-black text-white">ألمنيوم مخرّم · فوم · صاج</h3>
                 <p className="text-sm text-white/60 mt-2">تشكيلة واسعة من الخامات لتناسب الوظيفة العملية والمظهر الجمالي.</p>
