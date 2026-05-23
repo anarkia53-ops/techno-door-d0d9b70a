@@ -29,6 +29,7 @@ function ContactPage() {
   const syria = [
     { Icon: Phone, t: "الهاتف", v: "+963 944 211 023", href: "tel:+963944211023", dir: "ltr" },
     { Icon: Phone, t: "الهاتف", v: "+963 933 678 047", href: "tel:+963933678047", dir: "ltr" },
+    { Icon: Facebook, t: "فيسبوك", v: "techhnoodoor99", href: "https://www.facebook.com/techhnoodoor99" },
     { Icon: MapPin, t: "العنوان", v: "دمشق" },
   ];
 
