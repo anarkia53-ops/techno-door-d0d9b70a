@@ -30,7 +30,7 @@ function AboutPage() {
     <>
       <section className="relative py-28 overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 opacity-20">
-          <img src={timelineImg} alt="الخط الزمني لتطور تكنو دور" className="w-full h-full object-fill" />
+          <img src={timelineImg} alt="الخط الزمني لتطور تكنو دور" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent" />
         </div>
         <div className="relative mx-auto max-w-7xl px-5 md:px-8">
