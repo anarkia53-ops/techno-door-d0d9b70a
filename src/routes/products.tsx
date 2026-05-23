@@ -76,14 +76,14 @@ function ProductsPage() {
           <SectionHeading eyebrow="مواصفات تقنية" title="معايير" accent="عالمية" desc="من Polycarbonate الشفاف إلى الأبواب المضادة للحريق بسماكات 77mm و85mm." />
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="bg-surface-high overflow-hidden">
-              <img src={fire} alt="باب مضاد للحريق بسماكة 85mm من تكنو دور" loading="lazy" className="w-full aspect-[16/10] object-cover" />
+              <img src={fire} alt="باب مضاد للحريق بسماكة 85mm من تكنو دور" loading="lazy" className="w-full aspect-[16/10] object-contain" />
               <div className="p-6">
                 <h3 className="text-xl font-black text-white">باب مضاد للحريق · 85mm</h3>
                 <p className="text-sm text-white/60 mt-2">بولي كربونيت + إصدار 77mm متوفر للمنشآت الحساسة.</p>
               </div>
             </div>
             <div className="bg-surface-high overflow-hidden">
-              <img src={foam} alt="ألمنيوم مخرّم وأبواب فوم وصاج" loading="lazy" className="w-full aspect-[16/10] object-cover" />
+              <img src={foam} alt="ألمنيوم مخرّم وأبواب فوم وصاج" loading="lazy" className="w-full aspect-[16/10] object-contain" />
               <div className="p-6">
                 <h3 className="text-xl font-black text-white">ألمنيوم مخرّم · فوم · صاج</h3>
                 <p className="text-sm text-white/60 mt-2">تشكيلة واسعة من الخامات لتناسب الوظيفة العملية والمظهر الجمالي.</p>
