@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "تواصل معنا — تكنو دور" },
-      { name: "description", content: "تواصل مع تكنو دور لطلب عرض سعر أو استشارة فنية. هاتف 011 5711 4794، البريد admin@techno-door.com." },
+      { name: "description", content: "تواصل مع تكنو دور لطلب عرض سعر أو استشارة فنية. هاتف 011 5711 4794، البريد kaadan@techno-door.com." },
       { property: "og:title", content: "تواصل — تكنو دور" },
       { property: "og:description", content: "نحن هنا للإجابة على استفساراتك." },
       { property: "og:url", content: "/contact" },
@@ -21,7 +21,7 @@ function ContactPage() {
   const egypt = [
     { Icon: Phone, t: "الهاتف", v: "011 5711 4794", href: "tel:+201157114794", dir: "ltr" },
     { Icon: Phone, t: "الهاتف", v: "012 8625 4951", href: "tel:+201286254951", dir: "ltr" },
-    { Icon: Mail, t: "البريد", v: "admin@techno-door.com", href: "mailto:admin@techno-door.com" },
+    { Icon: Mail, t: "البريد", v: "kaadan@techno-door.com", href: "mailto:kaadan@techno-door.com" },
     { Icon: Globe, t: "الموقع", v: "techno-door.com", href: "https://techno-door.com" },
     { Icon: Facebook, t: "فيسبوك", v: "techhnoodoor99", href: "https://www.facebook.com/techhnoodoor99" },
     { Icon: MapPin, t: "العنوان", v: "القاهرة" },
