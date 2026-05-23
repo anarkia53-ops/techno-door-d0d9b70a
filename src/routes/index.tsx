@@ -44,7 +44,7 @@ function Home() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <div className="flex items-center gap-3 mb-6">
               <span className="h-2 w-2 bg-[var(--cyan)] glow-cyan-sm rounded-full animate-pulse" />
-              <span className="text-[var(--cyan)] text-xs font-black tracking-[0.25em] uppercase">Italian Automatic Doors · Since 1970</span>
+              <span className="font-black tracking-[0.25em] uppercase text-xl">Italian Automatic Doors · Since 1970</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.05] text-white max-w-4xl">
               القوة، الأمان<br/>
