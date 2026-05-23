@@ -104,7 +104,7 @@ function Home() {
             {products.slice(0, 6).map((p, i) => (
               <motion.div key={p.slug} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="group bg-surface-high hover:bg-surface-highest transition-all overflow-hidden">
                 <div className="aspect-[4/3] overflow-hidden bg-black">
-                  <img src={imgMap[p.img]} alt={p.title} loading="lazy" className="w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 object-fill" />
+                  <img src={imgMap[p.img]} alt={p.title} loading="lazy" className="w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 object-cover" />
                 </div>
                 <div className="p-6">
                   <div className="text-xs text-[var(--cyan)] font-black tracking-[0.2em] uppercase mb-2">{p.en}</div>
