@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "تكنو دور | الأبواب الأوتوماتيكية العالمية — الرئيسية" },
-      { name: "description", content: "تكنو دور TECHNODOOR — منذ 1970، رائد الأبواب الأوتوماتيكية العالمية في سوريا ومصر والسودان وليبيا. رولينج شاتر، سبيد دور، حواجز، وأبواب صناعية ضخمة." },
+      { name: "description", content: "تكنو دور TECHNODOOR — منذ 1970، رائد الأبواب الأوتوماتيكية العالمية في سوريا ومصر. رولينج شاتر، سبيد دور، حواجز، وأبواب صناعية ضخمة." },
       { property: "og:title", content: "تكنو دور | TECHNODOOR" },
       { property: "og:description", content: "أبواب أوتوماتيكية عالمية بخبرة 50+ سنة." },
       { property: "og:url", content: "/" },
@@ -142,7 +142,7 @@ function Home() {
             <img src={aboutImg} alt="رسم توضيحي لأنواع الأبواب التي تنتجها تكنو دور" className="w-full" loading="lazy" />
           </motion.div>
           <div>
-            <SectionHeading eyebrow="منذ 1970" title="إرث صناعي" accent="من دمشق إلى العالم" desc="تأسست في دمشق ونمت لتشمل فروعاً في القاهرة، الخرطوم، وبنغازي. نفّذنا مطار دمشق الدولي، البنوك، وكبرى العلامات التجارية." />
+            <SectionHeading eyebrow="منذ 1970" title="إرث صناعي" accent="من دمشق إلى العالم" desc="تأسست في دمشق ونمت لتشمل فروعاً في القاهرة. نفّذنا مطار دمشق الدولي، البنوك، وكبرى العلامات التجارية." />
             <Link to="/about" className="inline-flex items-center gap-2 gradient-cyan text-black px-6 py-3 text-sm font-black tracking-[0.18em] uppercase">
               اعرف القصة <ArrowLeft size={16} />
             </Link>

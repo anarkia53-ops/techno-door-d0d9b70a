@@ -57,7 +57,7 @@ function ContactPage() {
             { Icon: Mail, t: "البريد", v: "admin@techno-door.com", href: "mailto:admin@techno-door.com" },
             { Icon: Globe, t: "الموقع", v: "techno-door.com", href: "https://techno-door.com" },
             { Icon: Facebook, t: "فيسبوك", v: "techhnoodoor99", href: "https://www.facebook.com/techhnoodoor99" },
-            { Icon: MapPin, t: "الفروع", v: "دمشق · القاهرة · الخرطوم · بنغازي" },
+            { Icon: MapPin, t: "الفروع", v: "دمشق · القاهرة" },
           ].map(({ Icon, t, v, href, dir }) => (
             <motion.a
               key={t}
