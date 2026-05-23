@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowLeft, ShieldCheck, Zap, Cog, Award } from "lucide-react";
 import heroImg from "@/assets/td/installation.jpg";
-import aboutImg from "@/assets/td/about-hero.jpg";
+import aboutImg from "@/assets/td/about-doors.png";
 import { products, stats } from "@/lib/site-data";
 import clientsLogos from "@/assets/td/clients-logos.png";
 import { SectionHeading } from "@/components/site/SectionHeading";
@@ -136,7 +136,7 @@ function Home() {
       <section className="bg-surface-low py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8 grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <img src={aboutImg} alt="رسم توضيحي لأنواع الأبواب التي تنتجها تكنو دور" className="w-full" loading="lazy" />
+            <img src={aboutImg} alt="رسم توضيحي لأنواع الأبواب التي تنتجها تكنو دور" className="w-full h-auto object-contain" loading="lazy" />
           </motion.div>
           <div>
             <SectionHeading eyebrow="منذ 1970" title="إرث صناعي" accent="من دمشق إلى العالم" desc="تأسست في دمشق ونمت لتشمل فروعاً في القاهرة. نفّذنا مطار دمشق الدولي، البنوك، وكبرى العلامات التجارية." />
