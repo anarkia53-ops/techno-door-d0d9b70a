@@ -18,7 +18,7 @@ export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
       { title: "المنتجات والخدمات — تكنو دور" },
-      { name: "description", content: "تشكيلة كاملة من الأبواب الأوتوماتيكية الإيطالية: رولينج شاتر، أبواب جرّار، حواجز، شيش حصيرة، سبيد دور، وأبواب جراج." },
+      { name: "description", content: "تشكيلة كاملة من الأبواب الأوتوماتيكية العالمية: رولينج شاتر، أبواب جرّار، حواجز، شيش حصيرة، سبيد دور، وأبواب جراج." },
       { property: "og:title", content: "المنتجات — تكنو دور" },
       { property: "og:description", content: "حلول أبواب أوتوماتيكية لكل قطاع." },
       { property: "og:url", content: "/products" },
@@ -34,7 +34,7 @@ function ProductsPage() {
       <section className="relative py-24 border-b border-white/5 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="relative mx-auto max-w-7xl px-5 md:px-8">
-          <SectionHeading eyebrow="Italian Engineering" title="المنتجات" accent="والخدمات" desc="نقدم تشكيلة كاملة من الأبواب الأوتوماتيكية بأعلى المعايير الإيطالية، مع إمكانية تخصيص أي مقاس أو خامة." />
+          <SectionHeading eyebrow="Italian Engineering" title="المنتجات" accent="والخدمات" desc="نقدم تشكيلة كاملة من الأبواب الأوتوماتيكية بأعلى المعايير العالمية، مع إمكانية تخصيص أي مقاس أو خامة." />
         </div>
       </section>
 
@@ -73,7 +73,7 @@ function ProductsPage() {
       {/* Specs gallery */}
       <section className="bg-surface-low py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <SectionHeading eyebrow="مواصفات تقنية" title="معايير" accent="إيطالية" desc="من Polycarbonate الشفاف إلى الأبواب المضادة للحريق بسماكات 77mm و85mm." />
+          <SectionHeading eyebrow="مواصفات تقنية" title="معايير" accent="عالمية" desc="من Polycarbonate الشفاف إلى الأبواب المضادة للحريق بسماكات 77mm و85mm." />
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="bg-surface-high overflow-hidden">
               <img src={fire} alt="باب مضاد للحريق بسماكة 85mm من تكنو دور" loading="lazy" className="w-full aspect-[16/10] object-cover" />

@@ -17,10 +17,10 @@ const imgMap: Record<string, string> = { rolling, sliding, barrier, shutter, spe
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "تكنو دور | الأبواب الأوتوماتيكية الإيطالية — الرئيسية" },
-      { name: "description", content: "تكنو دور TECHNODOOR — منذ 1970، رائد الأبواب الأوتوماتيكية الإيطالية في سوريا ومصر والسودان وليبيا. رولينج شاتر، سبيد دور، حواجز، وأبواب صناعية ضخمة." },
+      { title: "تكنو دور | الأبواب الأوتوماتيكية العالمية — الرئيسية" },
+      { name: "description", content: "تكنو دور TECHNODOOR — منذ 1970، رائد الأبواب الأوتوماتيكية العالمية في سوريا ومصر والسودان وليبيا. رولينج شاتر، سبيد دور، حواجز، وأبواب صناعية ضخمة." },
       { property: "og:title", content: "تكنو دور | TECHNODOOR" },
-      { property: "og:description", content: "أبواب أوتوماتيكية إيطالية بخبرة 50+ سنة." },
+      { property: "og:description", content: "أبواب أوتوماتيكية عالمية بخبرة 50+ سنة." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -34,7 +34,7 @@ function Home() {
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="آلية الأبواب الأوتوماتيكية الإيطالية من تكنو دور" className="w-full h-full object-cover opacity-30" />
+          <img src={heroImg} alt="آلية الأبواب الأوتوماتيكية العالمية من تكنو دور" className="w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-l from-surface via-surface/70 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/40" />
           <div className="absolute inset-0 grid-bg opacity-50" />
@@ -50,7 +50,7 @@ function Home() {
               والتكنولوجيا <span className="text-gradient-cyan">في حركة واحدة</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
-              تكنو دور — خمسة عقود من الريادة في تصميم وتركيب الأبواب الأوتوماتيكية الإيطالية لكبرى المطارات والبنوك والعلامات التجارية العالمية في الشرق الأوسط وشمال إفريقيا.
+              تكنو دور — خمسة عقود من الريادة في تصميم وتركيب الأبواب الأوتوماتيكية العالمية لكبرى المطارات والبنوك والعلامات التجارية العالمية في الشرق الأوسط وشمال إفريقيا.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link to="/products" className="gradient-cyan text-black px-7 py-3.5 text-sm font-black tracking-[0.18em] uppercase hover:opacity-90 transition inline-flex items-center gap-2">
@@ -78,11 +78,11 @@ function Home() {
 
       {/* FEATURES */}
       <section className="mx-auto max-w-7xl px-5 md:px-8 py-24">
-        <SectionHeading eyebrow="لماذا تكنو دور" title="هندسة إيطالية," accent="جودة بلا حدود" desc="نمتلك الإمكانيات لتقديم أكبر وأضخم الأبواب الأوتوماتيكية بأي عرض أو ارتفاع، مع ضمان أعلى معايير الجودة والمواصفات القياسية." />
+        <SectionHeading eyebrow="لماذا تكنو دور" title="هندسة عالمية," accent="جودة بلا حدود" desc="نمتلك الإمكانيات لتقديم أكبر وأضخم الأبواب الأوتوماتيكية بأي عرض أو ارتفاع، مع ضمان أعلى معايير الجودة والمواصفات القياسية." />
         <div className="grid md:grid-cols-4 gap-5">
           {[
             { Icon: ShieldCheck, t: "أمان مطلق", d: "أنظمة قفل ومستشعرات أمان متقدمة لحماية المنشأة والأشخاص." },
-            { Icon: Zap, t: "أداء فائق", d: "محركات إيطالية بسرعات تشغيل عالية وعمر افتراضي ممتد." },
+            { Icon: Zap, t: "أداء فائق", d: "محركات عالمية بسرعات تشغيل عالية وعمر افتراضي ممتد." },
             { Icon: Cog, t: "تخصيص كامل", d: "أي مقاس وأي خامة وأي تصميم — نحوّل احتياجك إلى حقيقة." },
             { Icon: Award, t: "خبرة 50+ سنة", d: "إرث صناعي عريق نفّذ كبرى المشاريع الاستراتيجية في المنطقة." },
           ].map(({ Icon, t, d }) => (
