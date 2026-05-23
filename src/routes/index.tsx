@@ -83,7 +83,7 @@ function Home() {
           {[
             { Icon: ShieldCheck, t: "أمان مطلق", d: "أنظمة قفل ومستشعرات أمان متقدمة لحماية المنشأة والأشخاص." },
             { Icon: Zap, t: "أداء فائق", d: "محركات عالمية بسرعات تشغيل عالية وعمر افتراضي ممتد." },
-            { Icon: Cog, t: "تخصيص كامل", d: "أي مقاس وأي خامة وأي تصميم — نحوّل احتياجك إلى حقيقة." },
+            { Icon: Cog, t: "نحوّل احتياجك إلى حقيقة", d: "أي مقاس وأي خامة وأي تصميم — نحوّل احتياجك إلى حقيقة." },
             { Icon: Award, t: "خبرة 50+ سنة", d: "إرث صناعي عريق نفّذ كبرى المشاريع الاستراتيجية في المنطقة." },
           ].map(({ Icon, t, d }) => (
             <motion.div key={t} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="bg-surface-low hover:bg-surface-high p-7 transition-colors group">
