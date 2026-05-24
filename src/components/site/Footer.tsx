@@ -28,8 +28,8 @@ export function Footer() {
           <ul className="space-y-3 text-sm text-white/60">
             <li className="flex items-center gap-2"><Mail size={14} className="text-[var(--cyan)]" /><a href="mailto:kaadan@techno-door.com" className="hover:text-white">kaadan@techno-door.com</a></li>
             <li className="flex items-center gap-2"><Globe size={14} className="text-[var(--cyan)]" /><a href="https://techno-door.com" className="hover:text-white">techno-door.com</a></li>
-            <li className="flex items-center gap-2" dir="ltr"><Phone size={14} className="text-[var(--cyan)]" /><a href="tel:+201286254951" className="hover:text-white">01286254951</a></li>
-            <li className="flex items-center gap-2" dir="ltr"><Phone size={14} className="text-[var(--cyan)]" /><a href="tel:+201286254951" className="hover:text-white">012 8625 4951</a></li>
+            <li className="flex items-center gap-2" dir="ltr"><Phone size={14} className="text-[var(--cyan)]" /><a href="tel:+201157114794" className="hover:text-white">01157114794</a></li>
+            <li className="flex items-center gap-2" dir="ltr"><Phone size={14} className="text-[var(--cyan)]" /><a href="tel:+201157114794" className="hover:text-white">01157114794</a></li>
             <li className="flex items-center gap-2"><Facebook size={14} className="text-[var(--cyan)]" /><a href="https://www.facebook.com/technoodoor99" className="hover:text-white">technoodoor99</a></li>
           </ul>
         </div>
