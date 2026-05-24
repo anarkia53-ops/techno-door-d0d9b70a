@@ -85,7 +85,7 @@ function ProductsPage() {
             <div className="bg-surface-high overflow-hidden">
               <img src={foam} alt="ألمنيوم مخرّم وأبواب فوم وصاج" loading="lazy" className="w-full aspect-[16/10] object-contain" />
               <div className="p-6">
-                <h3 className="text-xl font-black text-white">ألمنيوم مخرّم · دابل  فوم · صاج</h3>
+                <h3 className="text-xl font-black text-white">ألمنيوم مخرّم · دابل فوم · صاج سادة ومخرم</h3>
                 <p className="text-sm text-white/60 mt-2">تشكيلة واسعة من الخامات لتناسب الوظيفة العملية والمظهر الجمالي.</p>
               </div>
             </div>
