@@ -1,39 +1,47 @@
-# Technodoor cPanel static config
+RewriteEngine On
+RewriteBase /
+
+# Ensure UTF-8
 AddDefaultCharset UTF-8
-DirectoryIndex index.html
-Options -Indexes
+
+# Compression (mod_deflate)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
+</IfModule>
+
+# Caching (mod_expires)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# 404 Error Document
 ErrorDocument 404 /404.html
 
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml application/wasm
-</IfModule>
+# Route handling for static files
+# If it's a folder/file that exists, serve it
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.*)/$ $1/index.html [L]
 
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresDefault "access plus 1 hour"
-  ExpiresByType text/html "access plus 0 seconds"
-  ExpiresByType text/css "access plus 1 year"
-  ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType font/woff2 "access plus 1 year"
-</IfModule>
+# Redirect trailing slash to non-trailing slash for consistency
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-<IfModule mod_headers.c>
-  <FilesMatch "\.(?:css|js|jpg|jpeg|png|gif|svg|webp|woff2|woff|ttf|ico)$">
-    Header set Cache-Control "public, max-age=31536000, immutable"
-  </FilesMatch>
-  <FilesMatch "\.html$">
-    Header set Cache-Control "public, max-age=0, must-revalidate"
-  </FilesMatch>
-</IfModule>
-
-# Pretty URLs: /about -> /about/index.html (Apache handles via DirectoryIndex automatically when trailing slash)
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  # If request maps to an existing dir without trailing slash, append slash
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
-</IfModule>
+# Support for pretty URLs (e.g. /about -> /about/index.html)
+RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+RewriteRule ^(.*)$ $1/index.html [L]
