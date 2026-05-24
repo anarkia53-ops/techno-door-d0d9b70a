@@ -19,7 +19,7 @@ export const products = [
     slug: "barriers",
     title: "حواجز وبوابات تحكم",
     en: "Barriers · Bollards · Turnstiles",
-    desc: "حواجز سيارات، بولاردات قابلة للسحب، وبوابات Turnstiles لإدارة الدخول والخروج بكفاءة.",
+    desc: "حواجز سيارات، بولارات قابلة للسحب، وبوابات Turnstiles لإدارة الدخول والخروج بكفاءة.",
     img: "barrier",
     specs: ["Barrier Gate", "Retractable Bollard", "Turnstile", "تكامل مع RFID"],
   },
