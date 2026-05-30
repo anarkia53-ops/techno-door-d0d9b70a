@@ -32,6 +32,11 @@ export function Footer() {
             <li className="flex items-center gap-2" dir="ltr"><Phone size={14} className="text-[var(--cyan)]" /><a href="tel:+201157114794" className="hover:text-white">01157114794</a></li>
             <li className="flex items-center gap-2"><Facebook size={14} className="text-[var(--cyan)]" /><a href="https://www.facebook.com/technoodoor99" className="hover:text-white">technoodoor99</a></li>
           </ul>
+          <h5 className="text-white text-xs font-black tracking-[0.18em] mt-4 mb-2">للتواصل في سوريا</h5>
+          <ul className="space-y-2 text-sm text-white/60">
+            <li className="flex items-center gap-2" dir="ltr"><Phone size={14} className="text-[var(--cyan)]" /><a href="tel:+963944211023" className="hover:text-white">+963 944 211 023</a></li>
+            <li className="flex items-center gap-2" dir="ltr"><Phone size={14} className="text-[var(--cyan)]" /><a href="tel:+963933678047" className="hover:text-white">+963 933 678 047</a></li>
+          </ul>
         </div>
       </div>
       <div className="border-t border-white/5">
